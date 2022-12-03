@@ -6,21 +6,21 @@
 <div class="taskbar">
     <a href="athaliacopy.html" style="text-decoration:none; color:white;">Home</a> &nbsp; &nbsp; &nbsp; 
     | &nbsp; &nbsp; &nbsp;
-    <a href="About.html" style="text-decoration:none; color: white;">About</a> &nbsp; &nbsp; &nbsp; 
+    <a href="About.html" style="text-decoration:none; color: white;">Services</a> &nbsp; &nbsp; &nbsp; 
     | &nbsp; &nbsp; &nbsp;
     <a href="Packages.html" style="text-decoration:none; color:white;">Packages</a> &nbsp; &nbsp; &nbsp;
     | &nbsp; &nbsp; &nbsp;
     <a href="Reviews.html" style="text-decoration:none; color:white;">Reviews</a> &nbsp; &nbsp; &nbsp; 
     | &nbsp; &nbsp; &nbsp;
-    <a href="Bookings.html" style="text-decoration:none; color:white;">Bookings</a> &nbsp; &nbsp; &nbsp;
-</div>
+    <a href="Bookings.html" style="text-decoration:none; color:white;">Book</a> &nbsp; &nbsp; &nbsp;
+</div>    
 <style>
 body {
   background-image: url('https://wallpaperaccess.com/full/2810351.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-color: #DCDCDC;
-  background-size: 100% 18%;
+  background-size: 100% 14%;
   display: table;
   margin-right: auto;
   margin-left: auto;
@@ -78,8 +78,8 @@ body {
   margin-left: auto;
 }
 .top-cont{
-   height: 62px;
-   width: 940px;
+   height: 110px;
+   width: 1000px;
    background-color: white;
    color: black;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -130,8 +130,8 @@ body {
   margin-left: auto;
 }
  .top-cont2{
-   height: 62px;
-   width: 940px;
+   height: 110px;
+   width: 1000px;
    background-color: white;
    color: black;
    text-align: center;
@@ -176,7 +176,7 @@ body {
     color: black;
     text-decoration: none;
 } 
-.button {
+.button2 {
   background-color: #8F55AA;
   border: none;
   color: white;
@@ -213,15 +213,206 @@ html, body, {
     left:0; 
     right:0; 
 }
+.CONTAINER-1{
+    display: grid;
+    grid-template-areas: "photoOne photoTwo" "photoThree photoThree";
+    height: 300px;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.img {
+    grid-area: photoOne;   
+}
+.LOGO {
+    background-color: #574D4A;
+    width: 700px;
+    height: 300px;
+    grid-area: photoTwo;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.CONTAINER-2{
+    height: 310px;
+    width: 1000px;
+    grid-area: photoThree;
+    background-color: white;
+   color: black;
+   text-align: center;
+   font-size: 25px;
+   padding: 60px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body 
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 20px;
+  padding: 16px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  align-items: center;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
 </style>
 </head>
 <body>
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-43d5c110-92cb-490b-a3e8-ca5aad186c1b"></div>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-e740429c-88be-4c98-9e5c-ca404b73c590"></div>
 <div class="mainheader">
   <br><b>Athalia</b><br></div>
-<div class="mainheader2"><br>Offers you the finest travel option.</div>
-<br><br><br><br><br><br><br><br>
+<div class="mainheader2"><br>Offers you the finest travel option.</div><br><br>
+<center><h2><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button></center>
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+  
+        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+</div></h2>
+<br><br>
   <div class="parent-div"> 
     <div class="top-cont">↠ PHILIPPINES ↞</div> 
     <div class="grid"> 
@@ -231,7 +422,7 @@ html, body, {
     <div class="grid_2"> 
      <div class="box_2"><img src="https://i.imgur.com/kUkEF47.jpg" style="width:350px;height:300px;"></img></div> 
      <div class="description_2"><br>Boracay is a tropical island about an hour's flight from Metro Manila in the Philippines. It has superb long white sand beaches and is one of the country's most developed tourist destinations. White Beach, Boracay placed 2nd in Condé Nast Traveler's 25 Best Island Beaches in the World: Readers' Choice Awards in 2020. Boracay is one of the top beaches in the world and is popular for its long stretch of fine white sand embracing the cerulean waters. So, we can’t blame you if you want to experience it for yourself for the first time or rediscover its beauty because we, too, want to travel there now!<br><br><br><br>
-    <div class="booknow"><a href="Bookings.html">BOOK NOW →</a></div></div> 
+    <div class="booknow"><a href="#">BOOK NOW →</a></div></div> 
     </div></div><br><br><br><br><br><br><br>
     <div class="parent-div2"> 
       <div class="top-cont2">↠ INTERNATIONAL ↞</div> 
@@ -241,7 +432,7 @@ html, body, {
       <div class="grid22"> 
        <div class="box22"><img src="https://i.imgur.com/JCafRkY.jpeg" style="width:350px;height:300px;"></img></div> 
        <div class="description22"><br>The country is famous for its scenic Alps and its rolling hills, plains, and lakes. It is also renowned for its chocolates and watches, while the Swiss knife is a legend in itself! Tourism in Switzerland is a delight of skiing, snow-walking, gorging on chocolates and cheeses and of course, swaying in the Alps. Switzerland is famous for its mountains and lakes, combining expansive greenery, slick cities and bucketfuls of fresh air, Switzerland is a stylish tourist destination that offers countless outdoor adventures and contemporary urban breaks. It also has one of the best public transport networks in the world.<br><br><br><br>
-      <div class="booknow22"><a href="Bookings.html">BOOK NOW →</a></div></div></div>
+      <div class="booknow22"><a href="#">BOOK NOW →</a></div></div></div>
       </div>
       <br><br><br><br><br><br><br><br><br><br>
 <div class="tropatrips">
@@ -253,26 +444,31 @@ html, body, {
         <img src="https://imgur.com/W2OfD6v.jpg" style="width:300px;height:200px;"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <img src="https://imgur.com/mHTvRDc.jpg" style="width:300px;height:200px;"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <img src="https://imgur.com/Vdux8s3.jpg" style="width:300px;height:200px;"></img>
-        <br><br><br><br><br><br><a href="Packages.html"><div class="button"><p>SEE MORE</p></div></a></center>
-    </div>
-<br><br><br><br><br><br><br><center><font color="black"><font size="3px">Disclaimer: No copyright infringement intended.</font></font></center>
+        <br><br><br><br><a href="Packages.html"><div class="button2"><p>SEE MORE</p></div></a></center>
+        <br><br><br><br><br><br><br><br><br>
+<div class="CONTAINER-1"> 
+          <img src="https://i.imgur.com/etT2t3S.jpg" style="width:300px;height:300px;"> 
+          <div class="LOGO"><br><br>ATHALIA<hr style="height:2px;width:150px;color:black;background-color:wheat"></div>
+          <div class="CONTAINER-2">Athalia is a company that helps you book your trip to your desired destination both locally and internationally, with ease or hassle-free! With Athalia, rest assured you'll have a carefree and unforgettable travel experience, safe and enjoyable trips, fun and exciting adventures because we'll be with you all throughout your travelling plans.
+</div></div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center><font color="black"><font size="3px">Disclaimer: No copyright infringement intended.</font></font></center>
       <hr style="height:1px;width:1447px;color:black;background-color:black"><br><br>
 <div class="row">
          <div class="column">
-           <h2>Athalia</h2><hr style="height:2px;width:80px;color:black;background-color:orange" align="center">
+           <h2>Athalia</h2><hr style="height:2px;width:80px;color:black;background-color:white" align="center">
            <p>123 Quezon City</p>
            <p>+639243434343434</p>
            <p>athalia.travelandtours@gmail.com</p>
          </div>
          <div class="column">
-           <h2>Follow Us<hr style="height:2px;width:80px;color:black;background-color:orange" align="center"></h2>
+           <h2>Follow Us<hr style="height:2px;width:80px;color:black;background-color:white" align="center"></h2>
            <p>
             <a href="https://www.facebook.com/athalia.travelticketing" class="right"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Facebook_svg-128.png" alt="Facebook Logo" style="width:25px;height:25px;"></img></a>
             <a href="#" class="right"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Instagram_svg-128.png" alt="Instagram Logo" style="width:25px;height:25px;"></img></a>
             <a href="#" class="right"><img src="https://cdn1.iconfinder.com/data/icons/social-media-rounded-corners/512/Rounded_Twitter5_svg-128.png" alt="Twitter Logo" style="width:25px;height:25px;"></img></a></p>
          </div>
          <div class="column">
-          <h2>Sign Up<hr style="height:2px;width:80px;color:black;background-color: orange" align="center"></h2>
+          <h2>Sign Up<hr style="height:2px;width:80px;color:black;background-color: white" align="center"></h2>
           <p>Some text..</p>
         </div>
        </div>
